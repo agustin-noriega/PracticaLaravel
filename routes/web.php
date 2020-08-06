@@ -14,6 +14,9 @@
 Route::get('/welcome', function () {
     return view('welcome');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/nosotros', function() {
 	return view("nosotros");
@@ -27,12 +30,16 @@ Route::get('/comentarios', function() {  /*POST*/
 	return view("comentarios");
 });
 
-Route::get('/calendario', function() {  /*POST*/
+Route::get('/calendario', function() {  /*POST-- */
 	return view("calendario");
 });
 
+Route::get('/reserva', function(){
+	return view("reserva");
+});
 
+Route::get('/mievento', function(){
+	return view("mievento");
+});
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::post('/mievento', ) AGREGAR CONTROLADOR
