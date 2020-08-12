@@ -17,29 +17,30 @@ Route::get('/welcome', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('/nosotros', function() {
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Route::get('/nosotros', function() { // Vista, Agregar Contacto
 	return view("nosotros");
 });
-
-Route::get('/contacto', function() {
-	return view("contacto");
-});
-
-Route::get('/comentarios', function() {  /*POST*/
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Route::get('/comentarios', function() {  // Vista
 	return view("comentarios");
 });
-
-Route::get('/calendario', function() {  /*POST-- */
+Route::post('/crearcomentario', );
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Route::get('/calendario', function() { //Listado
 	return view("calendario");
 });
-
-Route::get('/reserva', function(){
-	return view("reserva");
-});
-
-Route::get('/mievento', function(){
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Route::post('/crearevento', });
+Route::get('/mievento', function(){ //Listado
 	return view("mievento");
 });
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+
+
+
 
 // Route::post('/mievento', ) AGREGAR CONTROLADOR
