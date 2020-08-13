@@ -11,12 +11,13 @@
 |
 */
 
-Route::get('/welcome', function () {
+
+Route::get('/', function () {
     return view('welcome');
 });
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Route::get('/nosotros', function() { // Vista, Agregar Contacto
 	return view("nosotros");
@@ -31,7 +32,7 @@ Route::get('/calendario', function() { //Listado
 	return view("calendario");
 });
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-Route::post('/crearevento', });
+Route::post('/crearevento', );
 Route::get('/mievento', function(){ //Listado
 	return view("mievento");
 });

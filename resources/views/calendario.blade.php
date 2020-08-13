@@ -32,7 +32,6 @@
                 <div class="links">
                   <a href="/welcome">Inicio</a>
                   <a href="/nosotros">Nosotros</a>
-                  <a href="/contacto">Contacto</a>
                   <a href="/comentarios">Comentarios</a>
                 </div>
             </div>
