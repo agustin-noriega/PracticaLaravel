@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/welcome.css">
-    <title>Nosotros</title>
+    <title>crearGaleria</title>
 
     <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -25,7 +25,7 @@
             @endif
             <div class="content">
               <div class="title m-b-md">
-                Quienes somos?
+                Crear Galeria
               </div>
 
               <div class="links">

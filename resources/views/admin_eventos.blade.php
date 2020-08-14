@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/welcome.css">
-    <title>MisEventos</title>
+    <title>Admin_eventos</title>
 
     <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -26,14 +26,13 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Mis Eventos:
+                    ADMIN EVENTOS
                 </div>
 
                 <div class="links">
                   <a href="/">Inicio</a>
                   <a href="/nosotros">Nosotros</a>
                   <a href="/comentarios">Comentarios</a>
-                  <a href="/calendario">Calendario</a>
                 </div>
             </div>
     </div>

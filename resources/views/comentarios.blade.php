@@ -30,9 +30,9 @@
                 </div>
 
                 <div class="links">
-                  <a href="/welcome">Inicio</a>
+                  <a href="/">Inicio</a>
                   <a href="/nosotros">Nosotros</a>
-                  <a href="/contacto">Contacto</a>
+                  {{-- <a href="/contacto">Contacto</a> --}}
                   <a href="/calendario">Calendario</a>
                 </div>
             </div>

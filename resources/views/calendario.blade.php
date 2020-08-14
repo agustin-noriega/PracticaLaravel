@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="links">
-                  <a href="/welcome">Inicio</a>
+                  <a href="/">Inicio</a>
                   <a href="/nosotros">Nosotros</a>
                   <a href="/comentarios">Comentarios</a>
                 </div>

@@ -34,7 +34,7 @@
 
                 <div class="links">
                     <a href="/nosotros">Nosotros</a>
-                    <a href="/contacto">Contacto</a>
+                    {{-- <a href="/">Contacto</a> --}}
                     <a href="/comentarios">Comentarios</a>
                     <a href="/calendario">Calendario</a>
                     {{-- boton reserva solo logueado --}}

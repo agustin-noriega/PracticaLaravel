@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAdminEntret extends Migration
+class CreateAdminCatering extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateAdminEntret extends Migration
      */
     public function up()
     {
-        Schema::create('admin_entret', function (Blueprint $table) {
+        Schema::create('admin_caterings', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
 
@@ -33,6 +33,6 @@ class CreateAdminEntret extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('admin_entret');
+        Schema::dropIfExists('admin_catering');
     }
 }

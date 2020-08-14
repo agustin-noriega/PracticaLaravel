@@ -22,6 +22,7 @@ class Evento extends Migration
           $table->string('padres');
           $talbe->string('colegio');
           $table->integer('edad');
+          $table->string('rangoHora'); // sera MedioDoa. Tarde y Noche.
           $table->string('horaEvento');// MedioDia(12.30a17)Tarde(18a22)Noche(19a24)
           $table->integer('cantNinios');
           $table->integer('cantAdultos');
