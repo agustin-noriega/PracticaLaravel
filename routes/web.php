@@ -63,25 +63,34 @@ Route::get('/creargaleria', function(){ //Vista del Formulario
 });
 Route::post('/creargaleria', );
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-Route::get('/admin_eventos' function(){
+Route::get('/admin_eventos', function(){
   return view('admin_eventos');
 });
 Route::post('/admin_eventos', );
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-Route::get('/admin_mozos' function(){
+Route::get('/admin_mozos', function(){
   return view('admin_mozos');
 });
 Route::post('/admin_mozos', );
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-Route::get('/admin_entret' function(){
+Route::get('/admin_entret', function(){
   return view('admin_entret');
 });
 Route::post('/admin_entret', );
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-Route::get('/admin_catering' function(){
+Route::get('/admin_catering', function(){
   return view('admin_catering');
 });
 Route::post('/admin_catering', );
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Route::get('/prueba', function(){
+  return view('prueba');
+});
+
+Route::get('/menu', function(){
+  return view('layouts.menu');
+});
 
 
 
