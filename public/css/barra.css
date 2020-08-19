@@ -1,13 +1,7 @@
-.top-right {
-    position: absolute;
-    right: 10px;
-    top: 18px;
-}
-.nav{
-    margin-top: 9px;
-}
 
-.links > a {
+
+
+/* .links > a {
     color: #636b6f;
     padding: 0 25px;
     font-size: 13px;
@@ -15,4 +9,33 @@
     letter-spacing: .1rem;
     text-decoration: none;
     text-transform: uppercase;
+} */
+
+.container-fluid{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0%;
+    overflow: hidden;
+    background-color: #afafafbb;
 }
+
+.tit{
+    width: 10%;
+    background-color: #1c9de7bb;
+    float: left;
+}
+
+
+.barra{
+    background-color: #c00808bb;
+    width: 50%;
+    float: left;
+    align-items: flex-start;
+}
+
+.log{
+    background-color: #1b8851bb;
+    width: 18%;
+    float: left;
+}
+

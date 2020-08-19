@@ -7,13 +7,16 @@
 
   </head>
   <body>
-
+    
+      
         @include('layouts.barra')
         @yield('header')
-
+    
         @include('layouts.card')
+        fgh
         @yield('body')
 
+        asd
         @yield('footer')
 
 
