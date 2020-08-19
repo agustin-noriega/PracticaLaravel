@@ -88,9 +88,6 @@ Route::get('/prueba', function(){
   return view('prueba');
 });
 
-Route::get('/menu', function(){
-  return view('layouts.menu');
-});
 
 
 
