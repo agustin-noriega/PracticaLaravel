@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Entret extends Model
+class Comentarios extends Model
 {
-  protected $table = 'adminEntret';
+  protected $table = 'comentario';
   public $timestamps = true;
   //protected $primaryKey = 'id';
   protected $guarded = [];

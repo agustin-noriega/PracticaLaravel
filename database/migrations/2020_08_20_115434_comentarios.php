@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAdminCatering extends Migration
+class Comentarios extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,12 @@ class CreateAdminCatering extends Migration
      */
     public function up()
     {
-        Schema::create('admin_caterings', function (Blueprint $table) {
+        Schema::create('comentario', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
 
             $table->string('nombre');
-            $table->string('tel');
-            $table->string('email');
-            $table->string('tipo');
-            $table->string('facebook');
-            $table->string('instagram');
+            $table->string('comentario', 500);
         });
     }
 
@@ -33,6 +29,6 @@ class CreateAdminCatering extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('admin_catering');
+        Schema::dropIfExists('comentarios');
     }
 }

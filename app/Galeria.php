@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Galeria extends Model
 {
-  protected $table = 'admin_fotos';
+  protected $table = 'adminFoto';
   public $timestamps = true;
   //protected $primaryKey = 'id';
   protected $guarded = [];

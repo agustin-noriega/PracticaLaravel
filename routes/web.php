@@ -22,14 +22,9 @@ Route::get('/nosotros', function() { // Vista, Agregar Contacto
 	return view("nosotros");
 });
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-Route::get('/comentarios', function() {  // Vista
-	return view("comentarios");
-});
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-Route::get('/crearcomentario', function(){ // Vista
-	return view("crearcomentario");
-});
-Route::post('/crearcomentario', );
+Route::get('/comentarios', "ComentariosController@vistaComentario"); // Vista Comentarios
+
+Route::post('/comentarios', "ComentariosController@crearComentario"); // AltaComentario
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Route::get('/calendario', function(){
   return view("/calendario");

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAdminMozos extends Migration
+class AdminEntrets extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,16 @@ class CreateAdminMozos extends Migration
      */
     public function up()
     {
-        Schema::create('admin_mozos', function (Blueprint $table) {
+        Schema::create('adminEntret', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
 
             $table->string('nombre');
             $table->string('tel');
             $table->string('email');
+            $table->string('tipo');
+            $table->string('facebook');
+            $table->string('instagram');
         });
     }
 
@@ -30,6 +33,6 @@ class CreateAdminMozos extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('admin_mozos');
+        Schema::dropIfExists('admin_entret');
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAdminEvento extends Migration
+class AdminCaterings extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,16 @@ class CreateAdminEvento extends Migration
      */
     public function up()
     {
-        Schema::create('admin_eventos', function (Blueprint $table) {
+        Schema::create('adminCatering', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
 
-            $table->string('mozos');
-            $table->string('seña');
-            $table->integer('montoTotal');
-
-            // RELACIONES CON CLIENTE Y EVENTO
-            // cliente: id, telef, email, nombre, ape
-            // evento: id, fecha, imagen_seña, hora_evento,
+            $table->string('nombre');
+            $table->string('tel');
+            $table->string('email');
+            $table->string('tipo');
+            $table->string('facebook');
+            $table->string('instagram');
         });
     }
 
@@ -34,6 +33,6 @@ class CreateAdminEvento extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('admin_evento');
+        Schema::dropIfExists('admin_catering');
     }
 }

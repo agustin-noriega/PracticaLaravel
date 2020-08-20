@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAdminFotos extends Migration
+class AdminMozos extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,13 @@ class CreateAdminFotos extends Migration
      */
     public function up()
     {
-        Schema::create('admin_fotos', function (Blueprint $table) {
+        Schema::create('adminMozo', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
 
-            $table->string('imagen',500);
-            $table->string('comentario',500);
+            $table->string('nombre');
+            $table->string('tel');
+            $table->string('email');
         });
     }
 
@@ -29,6 +30,6 @@ class CreateAdminFotos extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('admin_fotos');
+        Schema::dropIfExists('admin_mozos');
     }
 }
